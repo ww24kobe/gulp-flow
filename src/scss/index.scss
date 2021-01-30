@@ -1,0 +1,10 @@
+$color:skyblue;
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    background-color: $color;
+    transform: scale(1.5);
+    box-shadow: 0 0 50px #ccc;
+}
