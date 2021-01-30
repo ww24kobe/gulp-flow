@@ -381,7 +381,7 @@ function watchTask(){
 
 
 配置文件gulpfile.js参考代码：
-```
+```js
 let {src,pipe,dest,series,parallel,watch  } = require('gulp');
 let del = require('del'); // 删除文件夹和文件
 let sass = require('gulp-sass'); // 编译css
@@ -466,9 +466,6 @@ exports.serve = parallel(html,css,js,watchTask)
 // 部署阶段，是不需要启动服务器，只需要把构建好的文件部署到线上服务器即可 gulp build
 //先删除dist目录，完毕之后，在并行(js)执行任务js和css 
 exports.build = series(clean, parallel(html,js,css))
-
-
-
 ```
 
 开发时，启动任务：
