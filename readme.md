@@ -13,19 +13,22 @@
 ## Gulp入门指南
 
 
-
 > 注意：`gulp3`版本在node12上已经是被放弃的版本了。既然如此那就升级`gulp4`吧
 
 
 
-
-
-1. 安装最新版本的gulp：  
+1. 项目中安装最新版本的gulp：  
 
 ```
 npm init -y
 npm install gulp-cli -g
 npm install gulp -D
+```
+我的显示如下：
+```
+gulp -v
+CLI version: 2.3.0
+Local version: 4.0.2
 ```
 
 2. 在项目根目录下创建一个名为 `gulpfile.js` 的配置文件
